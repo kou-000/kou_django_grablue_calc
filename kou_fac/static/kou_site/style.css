@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: gray;
+    margin:  0 0 50px 0;
+    height: 90px;
+    padding: 0 0;
+}
+
+.header {
+    color: maroon;
+}
+
+.notice {
+    color: red;
+    font-size: xx-large;
+}
