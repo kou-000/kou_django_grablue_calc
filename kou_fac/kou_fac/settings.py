@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')=mol3u-mjb_*k=cs0c%r0#g)*xvuge_68%t@#=7$m1%_)=z23'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ALLOWED_HOSTS = ['localhost', '34.82.155.108', 'pythonanywhere.com']
@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['localhost', '34.82.155.108', 'pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'sslserver',
     'kou_site',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -120,3 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Settings for https
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
