@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['localhost', '34.82.155.108', 'pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'sslserver',
+    # 'sslserver',
     'kou_site',
     'django.contrib.admin',
     'django.contrib.auth',
