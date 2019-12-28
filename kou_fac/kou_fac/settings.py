@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['127.0.0.1', 'kou.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'granblue_calc',
     'kou_site',
     'django.contrib.admin',
     'django.contrib.auth',
