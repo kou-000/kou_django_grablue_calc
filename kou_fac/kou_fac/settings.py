@@ -26,7 +26,7 @@ SECRET_KEY = ')=mol3u-mjb_*k=cs0c%r0#g)*xvuge_68%t@#=7$m1%_)=z23'
 DEBUG = False
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-ALLOWED_HOSTS = ['localhost', '34.82.155.108', 'kou.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'kou.pythonanywhere.com']
 
 
 # Application definition
